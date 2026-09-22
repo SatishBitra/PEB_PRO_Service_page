@@ -263,62 +263,95 @@ p {
   position: sticky;
   z-index: 50;
   top: 0;
-  display: grid;
-  grid-template-columns: 145px minmax(0, 1fr) auto auto;
-  align-items: center;
-  min-height: 72px;
-  padding: 0 4%;
+  width: 100%;
   border-bottom: 1px solid color-mix(in oklab, var(--ink) 12%, transparent);
   background: color-mix(in oklab, var(--background) 96%, transparent);
   backdrop-filter: blur(14px);
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  gap: 20px;
+}
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
 .brand {
   display: flex;
   align-items: center;
-  height: 58px;
+  height: 56px;
 }
 .brand img {
   width: auto;
-  height: 42px;
-  max-width: 148px;
+  height: 46px;
+  max-width: 156px;
   object-fit: contain;
+  display: block;
+}
+.brand-group .division {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 14px;
+  border-left: 1px solid color-mix(in oklab, var(--ink) 16%, transparent);
+  color: var(--muted-foreground);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  height: 24px;
 }
 .desktop-nav {
   display: flex;
-  justify-content: flex-end;
-  gap: clamp(14px, 1.6vw, 28px);
-  padding-inline: 20px;
-  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 1.8vw, 28px);
+  font-size: 13px;
+  font-weight: 500;
   white-space: nowrap;
+  flex: 1 1 auto;
 }
-.desktop-nav a,
-.site-footer a {
+.desktop-nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding-inline: 4px;
+  color: var(--foreground);
   transition: color 160ms ease;
 }
 .desktop-nav a:hover,
 .site-footer a:hover {
   color: var(--brand);
 }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
 .header-cta {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  padding: 0 18px;
-  border-radius: 12px;
+  padding: 0 20px;
+  border-radius: 10px;
   background: var(--brand);
   color: var(--primary-foreground);
   font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 180ms ease, transform 160ms ease;
 }
 .header-cta:hover,
 .btn-primary:hover {
   background: var(--brand-deep);
-}
-.division {
-  margin-left: 18px;
-  color: var(--muted-foreground);
-  font-size: 10px;
-  white-space: nowrap;
 }
 .menu-button,
 .mobile-nav {
@@ -1144,13 +1177,10 @@ textarea:focus-visible {
 }
 
 @media (max-width: 1100px) {
-  .desktop-nav {
+  .brand-group .division {
     display: none;
   }
-  .site-header {
-    grid-template-columns: 1fr auto auto;
-  }
-  .division {
+  .desktop-nav {
     display: none;
   }
   .menu-button {
@@ -1158,28 +1188,44 @@ textarea:focus-visible {
     place-items: center;
     width: 44px;
     height: 44px;
-    margin-left: 10px;
     border: 0;
-    background: transparent;
+    border-radius: 8px;
+    background: color-mix(in oklab, var(--brand) 8%, transparent);
     color: var(--brand);
+    cursor: pointer;
   }
   .mobile-nav {
     position: absolute;
-    top: 72px;
+    top: 100%;
     right: 0;
     left: 0;
-    display: grid;
-    padding: 24px 5%;
+    display: block;
+    padding-block: 16px;
     border-bottom: 1px solid var(--border);
     background: var(--background);
-    box-shadow: 0 8px 18px color-mix(in oklab, var(--ink) 8%, transparent);
+    box-shadow: 0 12px 24px color-mix(in oklab, var(--ink) 10%, transparent);
+  }
+  .mobile-nav-inner {
+    display: grid;
+    gap: 6px;
   }
   .mobile-nav a {
-    min-height: 46px;
+    min-height: 44px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--border);
+    padding-inline: 8px;
+    border-radius: 6px;
+    border-bottom: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
     font-size: 14px;
+  }
+  .mobile-nav .mobile-cta {
+    margin-top: 8px;
+    justify-content: center;
+    gap: 8px;
+    background: var(--brand);
+    color: var(--primary-foreground);
+    border-bottom: 0;
+    font-weight: 500;
   }
   .feature-grid {
     grid-template-columns: 1fr 1fr;
@@ -1222,23 +1268,18 @@ textarea:focus-visible {
   .section-title h2 {
     font-size: clamp(1.75rem, 9vw, 2.25rem);
   }
-  .site-header {
-    min-height: 68px;
-    padding-inline: 18px;
+  .header-container {
+    min-height: 66px;
   }
   .brand {
-    height: 54px;
+    height: 48px;
   }
   .brand img {
-    width: 112px;
-    max-height: 52px;
+    height: 38px;
+    max-width: 125px;
   }
   .header-cta {
     display: none;
-  }
-  .mobile-nav {
-    top: 68px;
-    padding-inline: 18px;
   }
   .hero {
     min-height: 680px;

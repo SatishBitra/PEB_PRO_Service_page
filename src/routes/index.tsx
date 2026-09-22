@@ -443,51 +443,59 @@ function Index() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a href="#top" className="brand">
-          <img src={pebproLogo} alt="PEB PRO by NRE" />
-        </a>
-        <nav className="desktop-nav" aria-label="Primary navigation">
-          <a href="#top">Home</a>
-          <a href="#about">About</a>
-          <a href="#solutions">Products & Services</a>
-          <a href="#applications">Gallery</a>
-          <a href="#process">Blog</a>
-          <a href="#consultation">Download Brochure</a>
-        </nav>
-        <a href="#consultation" className="header-cta">
-          Get in Touch <ArrowUpRight size={16} />
-        </a>
-        <span className="division">a division of NRE</span>
-        <button
-          className="menu-button"
-          aria-label={menuOpen ? "Close navigation" : "Open navigation"}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="container header-container">
+          <div className="brand-group">
+            <a href="#top" className="brand" aria-label="PEB PRO home">
+              <img src={pebproLogo} alt="PEB PRO by NRE" />
+            </a>
+            <span className="division">a division of NRE</span>
+          </div>
+          <nav className="desktop-nav" aria-label="Primary navigation">
+            <a href="#top">Home</a>
+            <a href="#about">About</a>
+            <a href="#solutions">Products & Services</a>
+            <a href="#applications">Gallery</a>
+            <a href="#process">Blog</a>
+            <a href="#consultation">Download Brochure</a>
+          </nav>
+          <div className="header-actions">
+            <a href="#consultation" className="header-cta">
+              Get in Touch <ArrowUpRight size={16} />
+            </a>
+            <button
+              className="menu-button"
+              aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
+        </div>
         {menuOpen && (
           <nav className="mobile-nav" aria-label="Mobile navigation">
-            <a onClick={() => setMenuOpen(false)} href="#top">
-              Home
-            </a>
-            <a onClick={() => setMenuOpen(false)} href="#about">
-              About
-            </a>
-            <a onClick={() => setMenuOpen(false)} href="#solutions">
-              Products & Services
-            </a>
-            <a onClick={() => setMenuOpen(false)} href="#applications">
-              Gallery
-            </a>
-            <a onClick={() => setMenuOpen(false)} href="#process">
-              Blog
-            </a>
-            <a onClick={() => setMenuOpen(false)} href="#consultation">
-              Download Brochure
-            </a>
-            <a onClick={() => setMenuOpen(false)} href="#consultation">
-              Get in Touch
-            </a>
+            <div className="container mobile-nav-inner">
+              <a onClick={() => setMenuOpen(false)} href="#top">
+                Home
+              </a>
+              <a onClick={() => setMenuOpen(false)} href="#about">
+                About
+              </a>
+              <a onClick={() => setMenuOpen(false)} href="#solutions">
+                Products & Services
+              </a>
+              <a onClick={() => setMenuOpen(false)} href="#applications">
+                Gallery
+              </a>
+              <a onClick={() => setMenuOpen(false)} href="#process">
+                Blog
+              </a>
+              <a onClick={() => setMenuOpen(false)} href="#consultation">
+                Download Brochure
+              </a>
+              <a onClick={() => setMenuOpen(false)} href="#consultation" className="mobile-cta">
+                Get in Touch <ArrowUpRight size={16} />
+              </a>
+            </div>
           </nav>
         )}
       </header>
