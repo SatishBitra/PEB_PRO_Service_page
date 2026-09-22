@@ -250,6 +250,7 @@ h3 {
   margin: 0;
   color: var(--ink);
   font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 400;
 }
 p {
   margin-bottom: 16px;
@@ -402,12 +403,14 @@ p {
   max-width: 760px;
   margin-bottom: 14px;
   font-size: clamp(2.6rem, 5vw, 4.35rem);
+  font-weight: 600;
 }
 .hero h2 {
   max-width: 720px;
   margin-bottom: 22px;
   color: color-mix(in oklab, var(--primary-foreground) 90%, transparent);
   font-size: clamp(1.15rem, 2vw, 1.65rem);
+  font-weight: 500;
 }
 .hero p {
   max-width: 720px;
@@ -1112,6 +1115,7 @@ textarea:focus-visible {
 }
 .final-content h2 {
   font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 600;
 }
 .final-content p {
   max-width: 680px;
@@ -1123,6 +1127,7 @@ textarea:focus-visible {
 .final-content h3 {
   margin: 28px 0 14px;
   font-size: 18px;
+  font-weight: 600;
 }
 .cta-row {
   display: flex;
