@@ -361,7 +361,7 @@ p {
 
 .hero {
   position: relative;
-  min-height: 590px;
+  min-height: 520px;
   display: flex;
   align-items: stretch;
   color: var(--primary-foreground);
@@ -401,26 +401,12 @@ p {
 }
 .hero h1 {
   max-width: 760px;
-  margin-bottom: 14px;
+  margin-bottom: 24px;
   font-size: clamp(2.6rem, 5vw, 4.35rem);
   font-weight: 600;
 }
-.hero h2 {
-  max-width: 720px;
-  margin-bottom: 22px;
-  color: color-mix(in oklab, var(--primary-foreground) 90%, transparent);
-  font-size: clamp(1.15rem, 2vw, 1.65rem);
-  font-weight: 500;
-}
-.hero p {
-  max-width: 720px;
-  margin-bottom: 10px;
-  color: color-mix(in oklab, var(--primary-foreground) 84%, transparent);
-  font-size: 13px;
-  line-height: 1.65;
-}
 .hero .btn {
-  margin-top: 18px;
+  margin-top: 8px;
 }
 .btn {
   display: inline-flex;
@@ -459,6 +445,34 @@ select:focus-visible,
 textarea:focus-visible {
   outline: 3px solid color-mix(in oklab, var(--brand) 35%, transparent);
   outline-offset: 3px;
+}
+
+.intro-section {
+  border-bottom: 1px solid color-mix(in oklab, var(--ink) 8%, transparent);
+}
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 64px;
+  align-items: start;
+}
+.intro-grid .lead {
+  margin-bottom: 0;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  line-height: 1.55;
+}
+.intro-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.intro-body p {
+  margin-bottom: 0;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.72;
 }
 
 .split-intro {
@@ -1287,7 +1301,7 @@ textarea:focus-visible {
     display: none;
   }
   .hero {
-    min-height: 680px;
+    min-height: 480px;
     align-items: end;
   }
   .hero > img {
@@ -1306,17 +1320,13 @@ textarea:focus-visible {
   }
   .hero h1 {
     font-size: 38px;
-  }
-  .hero h2 {
-    font-size: 18px;
-  }
-  .hero p {
-    font-size: 12px;
+    margin-bottom: 20px;
   }
   .hero .btn {
     width: 100%;
   }
   .split-intro,
+  .intro-grid,
   .image-split,
   .solution-grid,
   .title-row,

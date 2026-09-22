@@ -522,29 +522,41 @@ function Index() {
               <span /> PEB PRO Fuel Infrastructure
             </div>
             <h1 id="hero-heading">Underground Fuel Storage Tanks</h1>
-            <h2>
-              Reliable Underground Fuel Storage Solutions for Industrial &amp; Commercial
-              Applications
-            </h2>
-            <p>
-              Looking for a reliable underground fuel storage tank solution for your industrial,
-              commercial or infrastructure project?
-            </p>
-            <p>
-              PEB PRO provides engineered fuel storage solutions designed around your project's fuel
-              type, storage capacity, site conditions, safety requirements and operational needs.
-            </p>
-            <p>
-              From tank selection and engineering to fabrication, installation coordination and
-              commissioning support, we help businesses develop underground fuel storage
-              infrastructure with a focus on quality, safety, durability and efficient project
-              execution.
-            </p>
             <LinkButton>Plan Your Fuel Storage Project With PEB PRO</LinkButton>
           </motion.div>
         </section>
 
-        <section id="about" className="section requirements-section">
+        <section id="about" className="section intro-section">
+          <div className="container">
+            <ScrollReveal yOffset={24}>
+              <SectionTitle eyebrow="About PEB PRO">
+                Reliable Underground Fuel Storage Solutions for Industrial &amp; Commercial
+                Applications
+              </SectionTitle>
+              <div className="intro-grid">
+                <p className="lead">
+                  Looking for a reliable underground fuel storage tank solution for your industrial,
+                  commercial or infrastructure project?
+                </p>
+                <div className="intro-body">
+                  <p>
+                    PEB PRO provides engineered fuel storage solutions designed around your
+                    project's fuel type, storage capacity, site conditions, safety requirements and
+                    operational needs.
+                  </p>
+                  <p>
+                    From tank selection and engineering to fabrication, installation coordination
+                    and commissioning support, we help businesses develop underground fuel storage
+                    infrastructure with a focus on quality, safety, durability and efficient project
+                    execution.
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        <section id="requirements" className="section requirements-section">
           <div className="container split-intro">
             <ScrollReveal yOffset={24}>
               <SectionTitle eyebrow="Project requirements">
