@@ -154,19 +154,19 @@ SurfaceColourMain background#FFFFFFAlternate sectionVery-light neutral derived f
 
 Use a restrained 8px-based spacing system.
 
-space-1   = 4px
-space-2   = 8px
-space-3   = 12px
-space-4   = 16px
-space-5   = 20px
-space-6   = 24px
-space-8   = 32px
-space-10  = 40px
-space-12  = 48px
-space-16  = 64px
-space-20  = 80px
-space-24  = 96px
-space-32  = 128px
+space-1 = 4px
+space-2 = 8px
+space-3 = 12px
+space-4 = 16px
+space-5 = 20px
+space-6 = 24px
+space-8 = 32px
+space-10 = 40px
+space-12 = 48px
+space-16 = 64px
+space-20 = 80px
+space-24 = 96px
+space-32 = 128px
 
 Section spacing
 
@@ -210,12 +210,12 @@ CTA radius: 12px
 
 Recommended component radius hierarchy:
 
-CTA             12px
-Cards           8–12px
-Image cards     8px
-Input           8px
-FAQ             0–8px
-Large image     0–12px
+CTA 12px
+Cards 8–12px
+Image cards 8px
+Input 8px
+FAQ 0–8px
+Large image 0–12px
 
 Avoid excessive pill-shaped UI.
 
@@ -291,8 +291,6 @@ Get a Quote
 Discuss Your Project
 
 Request Consultation
-
-
 
 11. Icon System
 
@@ -457,7 +455,7 @@ CTA radius 12px
 Mobile
 
 Logo
-                         Menu
+Menu
 
 Menu opens a full-width/side navigation.
 
@@ -468,11 +466,11 @@ Layout
 Use the same visual language as the supplied reference hero:
 
 Full-width industrial image
-        ↓
+↓
 Dark subtle overlay
-        ↓
+↓
 Left-aligned content
-        ↓
+↓
 Primary CTA
 
 Hero copy
@@ -559,8 +557,6 @@ Closing statement
 
 PEB PRO works with project requirements to develop a suitable underground fuel storage solution rather than treating the tank as an isolated product.
 
-
-
 Visual treatment
 
 Use a split layout:
@@ -611,8 +607,6 @@ Associated civil and installation works
 Closing text
 
 The exact configuration is determined by the project requirements and applicable standards and regulations.
-
-
 
 Visual
 
@@ -720,8 +714,6 @@ Future expansion
 
 Our engineering-led approach helps identify the appropriate configuration for the project.
 
-
-
 Card design
 
 Image
@@ -784,14 +776,12 @@ Site-Specific Engineering
 
 Ground conditions, available space, groundwater level and existing underground utilities can all influence the installation.
 
-
-
 Layout
 
 Desktop:
 
-01        02        03
-04        05        06
+01 02 03
+04 05 06
 
 Each item:
 
@@ -852,8 +842,6 @@ Large infrastructure projects can require dedicated fuel storage for equipment a
 DG Backup Systems
 
 Underground diesel storage can provide fuel storage for facilities that depend on diesel generator systems for backup power.
-
-
 
 Visual structure
 
@@ -981,16 +969,14 @@ Project Handover
 
 Relevant project documentation and operational information are provided as applicable.
 
-
-
 Interaction
 
 Desktop:
 
 01 ───────── content
-        │
+│
 02 ───────── content
-        │
+│
 03 ───────── content
 
 Mobile:
@@ -1037,8 +1023,6 @@ Safety-Conscious Planning
 
 Fuel storage requires careful consideration of fire safety, hazardous areas, venting, electrical systems, earthing, leak detection and applicable regulations.
 
-
-
 23. Section — Regulations & Compliance
 
 Heading
@@ -1073,8 +1057,6 @@ For example, OISD publishes standards relevant to petroleum storage, handling an
 
 Requirements can vary according to fuel type, quantity, installation type and site, so the applicable requirements should be confirmed before design and installation.
 
-
-
 Visual direction
 
 Use a restrained technical section:
@@ -1083,8 +1065,7 @@ LEFT
 Regulatory copy
 
 RIGHT
-Compliance-related industrial image
-+
+Compliance-related industrial image +
 stacked document / shield icons
 
 Do not create fictional certification badges.
@@ -1106,8 +1087,6 @@ Underground Fuel StorageAbove-Ground Fuel StorageMakes efficient use of surface 
 Closing
 
 The best option depends on your site, fuel requirements, safety considerations, regulations and long-term operational needs.
-
-
 
 UI
 
@@ -1169,8 +1148,6 @@ CTA
 
 Request a Project Consultation
 
-
-
 Layout
 
 Use a strong editorial split:
@@ -1179,8 +1156,7 @@ LEFT
 Cost explanation
 
 RIGHT
-Cost factors
-+
+Cost factors +
 CTA
 
 No pricing table should be invented.
@@ -1229,17 +1205,15 @@ Can PEB PRO handle the complete project?
 
 PEB PRO provides engineering, fabrication, civil infrastructure and EPC capabilities. The exact scope for an underground fuel storage project can be defined based on the client's requirements.
 
-
-
 Accordion behaviour
 
 Default:
 
-Question                         +
+Question +
 
 Open:
 
-Question                         −
+Question −
 Answer
 
 Only one accordion should open at a time on mobile.
@@ -1255,8 +1229,6 @@ Intro
 Whether you need an underground diesel storage tank for a generator system, fuel storage for an industrial facility or a larger integrated fuel storage solution, the project should start with the right engineering and site assessment.
 
 PEB PRO can help you plan the right solution for your project.
-
-
 
 28. Requirement Form
 
@@ -1308,15 +1280,13 @@ CTA
 
 Get a Project Consultation
 
-
-
 Form layout
 
 Desktop:
 
-Fuel Type              Required Capacity
+Fuel Type Required Capacity
 
-Project Type           Project Location
+Project Type Project Location
 
 Your Requirement
 [ full width ]
@@ -1368,8 +1338,6 @@ Get a Quote
 Discuss Your Project
 
 Request Consultation
-
-
 
 Layout
 
@@ -1731,18 +1699,18 @@ Build Your Fuel Storage Infrastructure With PEB PRO
 37. Final Page Visual Flow
 
 ┌──────────────────────────────────────────────┐
-│ PEB PRO LOGO       NAVIGATION     GET IN TOUCH │
+│ PEB PRO LOGO NAVIGATION GET IN TOUCH │
 └──────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────┐
-│                                              │
-│        INDUSTRIAL HERO IMAGE                │
-│                                              │
-│  Underground Fuel Storage Tanks              │
-│  Reliable Underground Fuel Storage...        │
-│                                              │
-│  [Plan Your Fuel Storage Project With PEB PRO]│
-│                                              │
+│ │
+│ INDUSTRIAL HERO IMAGE │
+│ │
+│ Underground Fuel Storage Tanks │
+│ Reliable Underground Fuel Storage... │
+│ │
+│ [Plan Your Fuel Storage Project With PEB PRO]│
+│ │
 └──────────────────────────────────────────────┘
 
         Underground Fuel Storage Tanks

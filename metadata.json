@@ -1,0 +1,6 @@
+{
+  "name": "PEB PRO",
+  "description": "Engineered underground fuel storage solutions for industrial, commercial and infrastructure projects from PEB PRO.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
