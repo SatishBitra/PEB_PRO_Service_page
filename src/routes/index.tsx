@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type FormEvent } from "react";
+import { useState, type FormEvent, type ReactNode } from "react";
 import {
   ArrowUpRight, ChevronDown, ClipboardCheck, Construction, Factory,
   FileCheck, FileText, Flame, Fuel, Gauge, GitBranch, Layers3, MapPin,
@@ -97,9 +97,9 @@ const faqs = [
   ["Can PEB PRO handle the complete project?", "PEB PRO provides engineering, fabrication, civil infrastructure and EPC capabilities. The exact scope for an underground fuel storage project can be defined based on the client's requirements."],
 ];
 
-const LinkButton = ({ children, secondary = false }: { children: React.ReactNode; secondary?: boolean }) => <a href="#consultation" className={secondary ? "btn btn-secondary" : "btn btn-primary"}>{children}<ArrowUpRight size={17} strokeWidth={1.5} /></a>;
+const LinkButton = ({ children, secondary = false }: { children: ReactNode; secondary?: boolean }) => <a href="#consultation" className={secondary ? "btn btn-secondary" : "btn btn-primary"}>{children}<ArrowUpRight size={17} strokeWidth={1.5} /></a>;
 
-function SectionTitle({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) {
+function SectionTitle({ eyebrow, children }: { eyebrow?: string; children: ReactNode }) {
   return <div className="section-title">{eyebrow && <span>{eyebrow}</span>}<h2>{children}</h2></div>;
 }
 
